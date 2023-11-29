@@ -1,4 +1,6 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image';
+import Code from '@/public/Code.svg'
 const Base = () => {
     return (
         <>
@@ -20,7 +22,7 @@ const Base = () => {
                         
                         </div>
                     </div>
-                    <img className="m-5" style={{maxWidth:'500px',color:'blue'}} src="/Code.svg" alt="NA" />
+                    <Image width={500} height={500} className="m-5" style={{maxWidth:'500px',color:'blue'}} src={Code} alt="NA" />
                 </div>
             </div>
         </>
