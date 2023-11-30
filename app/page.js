@@ -5,12 +5,14 @@ import Project from "@/components/Project"
 import Contact from "@/components/Contact"
 export default function Home() {
   return (
-    <div className="bg-black h-100">
-      <Navbar/>
-      <Base/>
-      <About/>
-      <Project/>
-      <Contact/>
+    <div className="bg-black w-full overflow-scroll">
+      <Navbar />
+      <div className="mt-28">
+        <Base />
+        <About />
+        <Project />
+        <Contact />
+      </div>
     </div>
   )
 }

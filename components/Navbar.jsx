@@ -4,10 +4,10 @@ const navbar = () => {
 
     }
     return (<>
-        <div style={{ maxWidth: '100%' }} className="sticky top-0 drop-shadow-lg backdrop-blur-2xl ">
+        <div style={{ maxWidth: '100%' }} className="fixed top-0 drop-shadow-lg backdrop-blur-2xl w-full">
             <div className="flex justify-around p-4 items-center text-lg backdrop-blur-2xl text-white">
                 <div><a href="/"><span className=" font-semibold">Shreyans Mehta</span></a></div>
-                <div>
+                <div className="hidden md:block">
                     <div className="flex justify-between  text-white m-2 backdrop-blur-2xl ">
                         <a className="mx-2 hover:bg-gray-500 p-4 rounded " href="/">Home</a>
                         <a className="mx-2 hover:bg-gray-500 p-4 rounded " href="/">About</a>

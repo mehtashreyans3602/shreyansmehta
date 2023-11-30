@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Shreyans from '@/public/shreyans.jpg'
 const About = () => {
     return (
         <>
@@ -7,13 +9,15 @@ const About = () => {
                         <h1 className=" p-4 border-b-4 border-blue-800 hover:border-white">About</h1>
                     </div>
                 </div>
-                <div className="flex justify-around  items-center m-5 p-4 ">
+                <div className="flex md:flex-row flex-col justify-around  items-center m-5 p-4 ">
                     <div className="aspect-square">
-                        <img style={{minHeight:'100px',minWidth:'250px', Height: '100px',width:'500px' }} className="rounded-full border-8 border-blue-800 hover:border-white  m-4" src="shreyans.jpg" alt="" />
+                        <Image width={500} height={100} style={{minHeight:'100px',minWidth:'250px', Height: '100px',width:'500px' }} className="rounded-full border-8 border-blue-800 hover:border-white  m-4" src={Shreyans} alt="" />
 
                     </div>
-                    <div className=" text-start">
-                        <div className="ml-10 flex max-w-3xl">
+                    <div className="text-center">
+                    <p className=" text-white text-lg">Professional Summary:</p>
+                        <div className="ml-10 flex max-w-3xl text-start">
+                            
                             <p className=" text-white text-lg">As a skilled Developer,
                                 I am passionate about leveraging technology to create innovative and efficient solutions.
                                 With experience in developing applications utilizing frameworks such as Vue.js, Next.js, Flask and Django, I have successfully delivered complex projects.
