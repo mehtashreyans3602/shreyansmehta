@@ -16,7 +16,7 @@ const navbar = () => {
                     </div>
                 </div>
             </div>
-            <div class="bg-blue-600 h-2 rounded-r-full hidden" style={{width:'45%'}} ></div>
+            <div className="bg-blue-600 h-2 rounded-r-full hidden" style={{width:'45%'}} ></div>
         </div>
     </>)
 }
