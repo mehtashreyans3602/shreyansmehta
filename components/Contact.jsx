@@ -33,7 +33,7 @@ const Contact = () => {
                 ID.unique(),
                 formData
             );
-            
+
             setMessage({
                 type: 'success',
                 content: 'Form submitted successfully!',
@@ -64,71 +64,78 @@ const Contact = () => {
                     <h1 className=" p-4 border-b-4 border-blue-800 text-white hover:border-white">Contact Me</h1>
                 </div>
             </div>
-            <div className="flex flex-col bg-white p-8 rounded-lg shadow-md md:w-full w-80">
-            {message.type && (
-                    <div className={`mt-4 p-4 bg-${message.type === 'success' ? 'green' : 'red'}-100 rounded-md relative`}>
-                        <p className={`text-${message.type === 'success' ? 'green' : 'red'}-700`}>
-                            {message.content}
-                        </p>
+            <div className='drop-shadow-lg backdrop-blur-2xl rounded-lg'>
+                <div className="flex flex-col drop-shadow-lg backdrop-blur-2xl backdrop-brightness-90 p-8 rounded-lg ring-2 shadow-md md:w-96 w-80">
+                    <div className="text-xl text-center items-center justify-center p-4 m-4 ">
+                        <div className="flex items-center justify-center">
+                            <h1 className="p-4 border-b-4 border-blue-800 text-white">Let&apos;s Collaborate</h1>
+                        </div>
+                    </div>
+                    {message.type && (
+                        <div className={`mt-4 p-4 bg-${message.type === 'success' ? 'green' : 'red'}-100 rounded-md relative`}>
+                            <p className={`text-${message.type === 'success' ? 'green' : 'red'}-700`}>
+                                {message.content}
+                            </p>
+                            <button
+                                onClick={handleCloseMessage}
+                                className="absolute top-0 right-0 p-2 cursor-pointer"
+                            >
+                                &#x2715;
+                            </button>
+                        </div>
+                    )}
+                    <form className="space-y-4" onSubmit={handleSubmit}>
+                        <div>
+                            <label htmlFor="Name" className="block text-sm font-medium text-gray-700">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="Name"
+                                name="Name"
+                                value={formData.Name} // Add value attribute
+                                onChange={handleChange} // Add onChange event handler
+                                className="mt-1 p-2 w-full border rounded-md"
+                                placeholder="Your Name"
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                id="Email"
+                                name="Email"
+                                value={formData.Email} // Add value attribute
+                                onChange={handleChange} // Add onChange event handler
+                                className="mt-1 p-2 w-full border rounded-md"
+                                placeholder="Your Email"
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="Message" className="block text-sm font-medium text-gray-700">
+                                Message
+                            </label>
+                            <textarea
+                                id="Message"
+                                name="Message"
+                                value={formData.Message} // Add value attribute
+                                onChange={handleChange} // Add onChange event handler
+                                rows="4"
+                                className="mt-1 p-2 w-full border rounded-md"
+                                placeholder="Your Message"
+                            ></textarea>
+                        </div>
                         <button
-                            onClick={handleCloseMessage}
-                            className="absolute top-0 right-0 p-2 cursor-pointer"
+                            type="submit"
+                            className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
                         >
-                            &#x2715;
+                            Send Message
                         </button>
-                    </div>
-                )}
-                <form className="space-y-4" onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="Name" className="block text-sm font-medium text-gray-700">
-                            Name
-                        </label>
-                        <input
-                            type="text"
-                            id="Name"
-                            name="Name"
-                            value={formData.Name} // Add value attribute
-                            onChange={handleChange} // Add onChange event handler
-                            className="mt-1 p-2 w-full border rounded-md"
-                            placeholder="Your Name"
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            id="Email"
-                            name="Email"
-                            value={formData.Email} // Add value attribute
-                            onChange={handleChange} // Add onChange event handler
-                            className="mt-1 p-2 w-full border rounded-md"
-                            placeholder="Your Email"
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="Message" className="block text-sm font-medium text-gray-700">
-                            Message
-                        </label>
-                        <textarea
-                            id="Message"
-                            name="Message"
-                            value={formData.Message} // Add value attribute
-                            onChange={handleChange} // Add onChange event handler
-                            rows="4"
-                            className="mt-1 p-2 w-full border rounded-md"
-                            placeholder="Your Message"
-                        ></textarea>
-                    </div>
-                    <button
-                        type="submit"
-                        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
-                    >
-                        Send Message
-                    </button>
-                </form>
-                
+                    </form>
+
+                </div>
             </div>
         </div>
     );
