@@ -1,5 +1,21 @@
 {
-    "rewrites":[
-        {"source":"/(.*)", "destination":"/"}
+    "routes": [
+      {
+        "src": "/About",
+        "dest": "/Pages/About.jsx"
+      },
+      {
+        "src": "/Project",
+        "dest": "/Pages/Project.jsx"
+      },
+      {
+        "src": "/Contact",
+        "dest": "/Pages/Contact.jsx"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/Pages/$1"
+      }
     ]
-}
+  }
+  
