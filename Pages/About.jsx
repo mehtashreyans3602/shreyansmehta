@@ -1,3 +1,4 @@
+'use client';
 import "@/app/globals.css";
 import Header from "@/components/Header/Header";
 import AboutComponent from "@/components/About/AboutComponent";

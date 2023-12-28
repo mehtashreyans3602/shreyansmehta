@@ -1,3 +1,4 @@
+'use client';
 import "@/app/globals.css";
 import ContactComponent from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
