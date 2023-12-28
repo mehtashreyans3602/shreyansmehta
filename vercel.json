@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/About",
-        "dest": "/Pages/About.jsx"
+        "dest": "/About.jsx"
       },
       {
         "src": "/Project",
