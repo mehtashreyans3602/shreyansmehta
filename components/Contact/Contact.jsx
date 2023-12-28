@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Client, Databases, ID } from 'appwrite';
 
-const Contact = () => {
+const ContactComponent = () => {
     const [formData, setFormData] = useState({
         Name: '',
         Email: '',
@@ -141,4 +141,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactComponent;
