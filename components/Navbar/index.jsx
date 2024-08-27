@@ -11,13 +11,13 @@ const Navbar = () => {
   };
 
   // Close menu when clicking outside of the menu
-  const handleClickOutside = (e) => {
-    if (menuOpen && !e.target.closest('ul') && !e.target.closest('button')) {
-      setMenuOpen(false);
-    }
-  };
 
   useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuOpen && !e.target.closest('ul') && !e.target.closest('button')) {
+        setMenuOpen(false);
+      }
+    };
     document.addEventListener('click', handleClickOutside);
     return () => {
       document.removeEventListener('click', handleClickOutside);

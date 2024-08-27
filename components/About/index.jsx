@@ -1,6 +1,6 @@
 import React from 'react'
 
-const index = () => {
+const About = () => {
     return (
         <div className='flex flex-col gap-8 text-center my-4' id='About'>
             <h1 className='text-3xl'>About Me</h1>
@@ -15,13 +15,13 @@ const index = () => {
                         <br /><br /> Moreover, I did an internship as a Web Dev Intern where I got practical experience by learning Vue.js and solidifying my knowledge of Django.
                     </p><br />
                     <p className="text-lg">
-                        During my Bachelor's, I developed an interest in learning a variety of topics.
-                        I started with Data Science, completing a certification through Coursera's IBM Data Science Professional Course.
+                        During my Bachelor&apos;s, I developed an interest in learning a variety of topics.
+                        I started with Data Science, completing a certification through Coursera&apos;s IBM Data Science Professional Course.
                         Afterwards, I learned the fundamentals of Machine Learning and AI and completed several course in Kaggle, Udemy and Coursera.
                         I then learned about the fundamentals of .NET Development and C#.
                         For my final year project, I worked on a MERN stack application, using tools like Mapbox, TypeScript, React, and Next.js.
                         <br /><br />
-                        Throughout my studies, I took part in several hackathons, attended industry meetups, and worked on various projects in different areas of Computer Science. I've also gained practical experience through four internships and completed several certification courses, finishing my Bachelor's Degree in June 2024.
+                        Throughout my studies, I took part in several hackathons, attended industry meetups, and worked on various projects in different areas of Computer Science. I&apos;ve also gained practical experience through four internships and completed several certification courses, finishing my Bachelor&apos;s Degree in June 2024.
                     </p><br />
                     <p className="text-lg">
                         As of now I have a total of 11 months of Internship Experience and hands-on experience of 4+ years.
@@ -36,4 +36,4 @@ const index = () => {
     )
 }
 
-export default index
+export default About;

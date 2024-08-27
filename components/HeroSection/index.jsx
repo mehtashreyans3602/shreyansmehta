@@ -6,7 +6,7 @@ import profile from '@/Assets/Images/shreyans.jpg';
 import { useState } from 'react';
 import shreyansmehta from "@/Assets/PDF/Shreyans.pdf"
 import Link from 'next/link';
-const index = () => {
+const HeroSection = () => {
     const [isDownloading, setIsDownloading] = useState(false);
 
     const handleClick = () => {
@@ -61,4 +61,4 @@ const index = () => {
     )
 }
 
-export default index;
+export default HeroSection;
