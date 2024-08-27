@@ -1,0 +1,1 @@
+export const skills = ["Python", "JavaScript", "TypeScript", "React.js", "Next.js", "Vue.js", "C++", "C#", "Java", "MySQL", "PostGreSQL", "MongoDB", "SupaBase", "Teradata", "SingleStore"];
